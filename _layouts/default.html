@@ -1,51 +1,82 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tackle Grab</title>
+  <meta name="description" content="Tackle Grab">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
 
-    {% include meta.html %}
+  <style>
+  body {
+      background-color: #21262E;
+      color: #FFF;
+      margin: 0;
+  }
+  #container {
+      margin: 20px auto 0 auto;
+      width: 638px;
+      max-width: 100%;
+  } 
+  #header_txt {
+      background-color: #1E4E69;
+      color: #FFF;
+      text-align: center;
+      padding: 1px 0;
+  }
+  #page_txt {
+    background-color: #FFF;
+    color: #000;
+    border: 1px #000;
+    padding: 10px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  @media (max-device-width: 380px) {
+    #container {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+</style>
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  ga('create', 'UA-33463235-1', 'tacklegrab.com');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+</script>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+</head>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
+<body marginwidth="0" marginheight="0" topmargin="0" leftmargin="0"
+rightmargin="0">
+  <div id="container">
+    <div id="header_img">
+      <img src="logo.png" alt="" />
     </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
+    <div id="header_txt">
+      <h2>Tackle Grab Is Closed</h2>
     </div>
+    <div id="page_txt">
+      <p>It is with great sadness that we have to inform you that Tackle Grab has to go out of business.  While we did our best to deliver great products direct to your door for a reduced rate, the costs of running such a discount business eventually became too great to continue operations as we were unable to hit our milestones to bring the business to profitability.</p>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
+      <p>We know that many of you will find this news upsetting and we apologize for having to bring this news to you.  We started this business with the hope that we could attract tens of thousands of fishing enthusiasts, unfortunately, we did not reach that goal and the business became unsustainable as a result.</p>
+
+      <p>Because of this we have no other choice but to file for Chapter 7 Bankruptcy.</p>
+
+      <p>We are truly sorry.<p>
+
+      <p><br />- The Tackle Grab Team</p> 
     </div>
+  </div>
 
-    {% include analytics.html %}
-  </body>
+</body>
 </html>
